@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Stalin's notebook | Домашняя страница</title>
+    <link rel="stylesheet" href="~/Content/index.css" />
+    <script src="~/scripts/index.js"></script>
+</head>
+<body>
+    <div class="layer_1" id="layer_1">
+        <content>
+            <img src="~/Content/img/logo.png" />
+            <div class="autorisation">
+                <div onclick="form_open(); enter_activate();">Вход</div>
+            </div>
+        </content>
+    </div>
+    <div class="layer_2" id="layer_2">
+        <content>
+            <div class="enter_tab" id="enter_tab" onclick="enter_activate()">Вход</div>
+            <div class="reg_tab" id="reg_tab" onclick="reg_activate()">Регистрация</div>
+            <form id="enter">
+                <input type="email" name="email" placeholder="E-mail" />
+                <input type="password" name="password" placeholder="Пароль" />
+                <input type="submit" value="Войти"/>
+            </form>
+
+            <form id="register">
+                <input type="text" name="username" placeholder="Логин" />
+                <input type="text" name="firstname" placeholder="Имя" />
+                <input type="text" name="lastname" placeholder="Фамилия" />
+                <input type="email" name="email" placeholder="E-mail" />
+                <input type="password" name="password" placeholder="Пароль" />
+                <input type="submit" value="Зарегистрироваться" />
+            </form>
+        </content>
+    </div>
+</body>
+</html>
